@@ -1,0 +1,543 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="portfolio.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$ ('#menu_wrapper_pre').hover(function(){
+				$('#menu_wrapper_pre').fadeOut(300);
+				$("#menu_wrapper").fadeIn(300);
+				$('#menu').fadeIn(600);
+			});
+
+			$ ('#menu').hover(function(){},function(){
+				$('#menu_wrapper_pre').fadeIn(300);
+				$("#menu_wrapper").fadeOut(600);
+				$("#menu").fadeOut(300);		
+			})
+
+			$("#menu_github").click(function(){
+				window.open('https://github.com/dav92lee', '_blank');
+			});
+
+			$("#menu_stackoverflow").click(function(){
+				window.open('http://stackoverflow.com/users/3752930/dave-lee', '_blank');
+			})
+
+			$("#menu_linkedin").click(function(){
+				window.open('http://linkedin.com/pub/david-lee/2a/1a4/4a4/', '_blank');
+			})
+
+			$("#menu_linkedin").click(function(){
+				window.open('http://linkedin.com/pub/david-lee/2a/1a4/4a4/', '_blank');
+			})
+
+			$("#menu_tumblr").click(function(){
+				window.open('http://swipemeditates.tumblr.com', '_blank');
+			})
+
+			$("#filter_li_bot_sub_resume").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_resume_complete").css("color", "#26b7d6");
+				$("#filter_li_bot_sub_resume_complete").parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_resume_complete").css("color", "#272727");
+				$("#filter_li_bot_sub_resume_complete").parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_resume_complete").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_resume").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_resume").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_resume_printable").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_resume").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_resume").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_education").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_education_date").css("color", "#26b7d6");
+				$("#filter_li_bot_sub_education_date").parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_education_date").css("color", "#272727");
+				$("#filter_li_bot_sub_education_date").parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_education_date").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_education").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_education").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_work").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_work_date").css("color", "#26b7d6");
+				$("#filter_li_bot_sub_work_date").parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_work_date").css("color", "#272727");
+				$("#filter_li_bot_sub_work_date").parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_work_date").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_work").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_work").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_programming").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_programming_date").css("color", "#26b7d6");
+				$("#filter_li_bot_sub_programming_date").parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_programming_date").css("color", "#272727");
+				$("#filter_li_bot_sub_programming_date").parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_programming_date").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_programming").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_programming").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_programming_language").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_programming").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_programming").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_skills").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_skills_list").css("color", "#26b7d6");
+				$("#filter_li_bot_sub_skills_list").parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_skills_list").css("color", "#272727");
+				$("#filter_li_bot_sub_skills_list").parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_skills_list").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_skills").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_skills").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_timeline").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_timeline_complete").css("color", "#26b7d6");
+				$("#filter_li_bot_sub_timeline_complete").parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_timeline_complete").css("color", "#272727");
+				$("#filter_li_bot_sub_timeline_complete").parent().css('border-color', "#272727");
+			})
+
+			$("#filter_li_bot_sub_timeline_complete").mouseenter(function(){
+				$(this).css("color", "#26b7d6");
+				$("#filter_li_bot_sub_timeline").css("color", "#26b7d6");
+				$(this).parent().css('border-color', "#26b7d6");
+			}).mouseleave(function(){
+				$(this).css("color", "#272727");
+				$("#filter_li_bot_sub_timeline").css("color", "#272727");
+				$(this).parent().css('border-color', "#272727");
+			})
+
+			$('#menu_wrapper_pre').fadeOut(100);
+			$("#menu_wrapper").fadeIn(100);
+			$('#menu').fadeIn(400);
+			$(".content_wrapper").fadeIn(1200);
+			$('#menu_wrapper_pre').delay(2000).fadeIn(300);
+			$("#menu_wrapper").delay(2000).fadeOut(600);
+			$("#menu").delay(2000).fadeOut(300);
+		});
+
+
+
+		function resumePage(){
+
+		}
+
+		function educationPage(){
+
+		}
+	</script>
+</head>
+<body>
+
+	<!-- Menu -->
+	<div id="menu_wrapper_pre">
+		<div id="menu_triangle_big"></div>
+		<div id="menu_triangle_small"></div>
+	</div>
+	<div id="menu">
+		<ul id="menu_ul_top">
+			<div id="menu_li_title">Dave Lee.</div>
+			<li class="menu_li_top" id="menu_resume">R&eacute;sum&eacute;</li>
+			<li class="menu_li_top" id="menu_programming">Programming</li>
+			<li class="menu_li_top" id="menu_design">Design</li>
+			<li class="menu_li_top" id="menu_blog">Blog</li>
+		</ul>
+		<ul id="menu_ul_bot">
+			<li class="menu_li_bot" id="menu_github">GitHub</li>
+			<li class="menu_li_bot" id="menu_stackoverflow">StackOverflow</li>
+			<li class="menu_li_bot" id="menu_linkedin">LinkedIn</li>
+			<li class="menu_li_bot" id="menu_tumblr">Tumblr (music flow)</li>
+			<div id="menu_li_contact">Dav92Lee@Gmail.com</div>
+		</ul>
+	</div>
+	<div id="menu_wrapper"></div>	
+
+
+	<!-- Content -->
+	<div id="content">
+		<div class="content_wrapper">
+			<div class="content_top">
+				<div class="filter_wrapper">
+					<ul class="filter_ul">
+						<li class="filter_li">
+							<div class="filter_li_top_title" id="filter_li_bot_sub_resume">R&eacute;sum&eacute;</div>
+							<div class="filter_li_bot_sub_wrapper light-gray">
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_resume_complete">Complete</span>
+								<span class="filter_li_bot_sub_title_space">, </span>
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_resume_printable">Printable</span>
+							</div>
+						</li>
+						<li class="filter_li">
+							<div class="filter_li_top_title" id="filter_li_bot_sub_education">Education</div>
+							<div class="filter_li_bot_sub_wrapper light-gray">
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_education_date">Date</span>
+							</div>
+						</li>
+						<li class="filter_li">
+							<div class="filter_li_top_title" id="filter_li_bot_sub_work">Work</div>
+							<div class="filter_li_bot_sub_wrapper light-gray">
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_work_date">Date</span>
+							</div>
+						</li>
+						<li class="filter_li">
+							<div class="filter_li_top_title" id="filter_li_bot_sub_programming">Programming</div>
+							<div class="filter_li_bot_sub_wrapper light-gray">
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_programming_date">Date</span>
+								<span class="filter_li_bot_sub_title_space">, </span>
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_programming_language">Language</span>
+							</div>
+						</li>
+						<li class="filter_li">
+							<div class="filter_li_top_title" id="filter_li_bot_sub_skills">Skills</div>
+							<div class="filter_li_bot_sub_wrapper light-gray">
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_skills_list">List</span>
+							</div>
+						</li>
+						<li class="filter_li">
+							<div class="filter_li_top_title" id="filter_li_bot_sub_timeline">Timeline</div>
+							<div class="filter_li_bot_sub_wrapper light-gray">
+								<span class="filter_li_bot_sub_title" id="filter_li_bot_sub_timeline_complete">Complete</span>
+							</div>
+						</li>
+					</ul>
+					<div class="filter_title_wrapper">
+						<div class="filter_title">Dave Lee</div>
+						<div class="filter_sub_title light-gray">Dav92Lee@Gmail.com</div>
+					</div>
+				</div>
+			</div>
+			<div class="content_bot">
+				<div class="content_box">
+					<div class="content_box_title_wrapper">
+						<div class="content_box_title">Education</div>
+					</div>
+
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Brown University</div>
+							<div class="content_box_block_location">Providence, Rhode Island</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">M.S Computer Science</span>
+							</div>
+							<div class="content_box_block_bullet">Starting August 2014</div>
+							<div class="content_box_block_date">May 2015</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Brown University</div>
+							<div class="content_box_block_location">Providence, Rhode Island</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">B.A Economics</span>
+							</div>
+							<div class="content_box_block_bullet">Graduated Magna Cum Laude</div>
+							<div class="content_box_block_bullet">Cumulative GPA: 4.0</div>
+							<div class="content_box_block_bullet">Strong coursework in computer science (Data Structures & Algorithms, Computer Systems, Modern Web Applications)</div>
+							<div class="content_box_block_date">May 2014</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="content_box">
+					<div class="content_box_title_wrapper">
+						<div class="content_box_title">Work Experience</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Professor Steve Reiss</div>
+							<div class="content_box_block_location">Providence, Rhode Island</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Researcher (CS)</span>
+							</div>
+							<div class="content_box_block_bullet">Project Fishbowl</div>
+							<div class="content_box_block_date">May 2014 - Present</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">NRB Bearings</div>
+							<div class="content_box_block_location">Mumbai, India</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Web Designer/Developer</span>
+							</div>
+							<div class="content_box_block_bullet">Developed their website using HTML, CSS, and JavaScript and reduced number of clicks required to reach the deepest root of their corporate website from 7 clicks to 3 clicks</div>
+							<div class="content_box_block_bullet">Updated their product database and implemented a product finder for their corporate website</div>
+							<div class="content_box_block_bullet">Redesigned presentations, brochures and business cards as well as centralized all marketing material into one database to ensure a consistent brand image</div>
+							<div class="content_box_block_date">May 2013 - Present</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Collective Photography</div>
+							<div class="content_box_block_location">Providence, Rhode Island</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Co-Founder</span>
+							</div>
+							<div class="content_box_block_bullet">Founded a flat rate photography service that matched local Providence businesses as well as Brown student organizations with freelance RISD photography majors</div>
+							<div class="content_box_block_date">Jan. 2013 - May 2013</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">EverTrue</div>
+							<div class="content_box_block_location">Boston, Massachusetts</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Marketing Intern</span>
+							</div>
+							<div class="content_box_block_bullet">Designed product landing pages using HTML and CSS</div>
+							<div class="content_box_block_bullet">Co-established and launched an internship program for EverTrue in an effort to recruit college students for marketing efforts</div>
+							<div class="content_box_block_date">May 2012 - Sept. 2012</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Heart of Our World</div>
+							<div class="content_box_block_location">Yaound&eacute;, Cameroon</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Marketing Director</span>
+							</div>
+							<div class="content_box_block_bullet">Arranged a 5 day sports camp/basketball tournament with over 400 participants and donated over 1,000 pairs of sneakers to the participants and their coaches</div>
+							<div class="content_box_block_bullet">Provided K-12 scholarships for 10 children from Foundation Facts, an orphanage in Yaound&eacute;
+							</div>
+							<div class="content_box_block_date">Dec. 2011 - Nov. 2012</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="content_box">
+					<div class="content_box_title_wrapper">
+						<div class="content_box_title">Programming</div>
+					</div>
+
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Project Fishbowl</div>
+							<div class="content_box_block_location">Professor Steve Reiss</div>
+							<div class="content_box_block_git">GitHub</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Java, Javascript, HTML</span>
+							</div>
+							<div class="content_box_block_bullet">Web application that simulates a home where multiple users can test smart home devices via a controller API</div>
+							<div class="content_box_block_bullet">Planned the overall program architecture</div>
+							<div class="content_box_block_bullet">Implemented builder model for all simulated objects to handle instantiation of objects with variable number of parameters</div>
+							<div class="content_box_block_bullet">Coded the entirety of the front end client code; implementing HTML5 canvas to display the simulated house</div>
+							<div class="content_box_block_date">May 2014 - Sept. 2014</div>
+						</div>
+					</div>
+
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Med-International</div>
+							<div class="content_box_block_location">Med-International</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">RoR, Javascript, PostgreSQL</span>
+							</div>
+							<div class="content_box_block_bullet">Task manager application that is being developed for resource poor hospitals in Haiti, Tanzania, and Zanzibar that helps optimize the efficiency of hospital equipment</div>
+							<div class="content_box_block_bullet">Redesigned app to allow any action to be completed in 3 clicks</div>
+							<div class="content_box_block_bullet">Helped implement eager loading for tasks stored in the database</div>
+							<div class="content_box_block_date">Sept. 2013 - Present</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Realtime Chatroom</div>
+							<div class="content_box_block_location">CS132</div>
+							<div class="content_box_block_git">GitHub</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">Javascript, HTML</span>
+							</div>
+							<div class="content_box_block_bullet">A basic realtime chatroom written in Node.js that uses sockets for client server communication</div>
+							<div class="content_box_block_date">Mar. 2014</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Unix Shell </div>
+							<div class="content_box_block_location">CS33</div>
+							<div class="content_box_block_git">GitHub</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">C</span>
+							</div>
+							<div class="content_box_block_bullet">A UNIX shell that does simple text parsing on user input and allows users to run a few simple commands and execute programs. The shell also features file redirection, pipes, and job control to manage multiple processes.
+							</div>
+							<div class="content_box_block_date">Nov. 2013</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Scorekeeper Database </div>
+							<div class="content_box_block_location">CS33</div>
+							<div class="content_box_block_git">GitHub</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_position_wrapper">
+								<span class="content_box_position_indent"></span>
+								<span class="content_box_block_position">C</span>
+							</div>
+							<div class="content_box_block_bullet">A server that manages multiple clients modifying key-value pairs in a database. I implemented fine-grained locking, allowing for thread-safe manipulations.
+							</div>
+							<div class="content_box_block_date">Nov. 2013</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="content_box">
+					<div class="content_box_title_wrapper">
+						<div class="content_box_title">Skills</div>
+					</div>
+
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Programming Languages</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_bullet">Javascript, HTML, Java, RoR, Python (basic), C (basic)</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Software</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_bullet">Adobe Creative Suite, Final Cut Pro, Logic Pro</div>
+						</div>
+					</div>
+
+					<div class="content_box_block">
+						<div class="content_box_block_left">
+							<div class="content_box_block_title">Language</div>
+						</div>
+						<div class="content_box_block_right">
+							<div class="content_box_block_bullet">Mandarin, Spanish (basic)</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+</body>
+
+</html>
